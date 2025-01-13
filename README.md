@@ -13,8 +13,9 @@ Le projet suit les étapes suivantes :
 
 
 ### Exploration des Données :
+ 
+ ![Capture d’écran 2025-01-13 195414](https://github.com/user-attachments/assets/b9326478-46bc-4ba8-bc1f-e47727d9a4c7)
 
-![Capture d’écran 2025-01-13 195414](https://github.com/user-attachments/assets/b1e54819-4ff5-4b4b-a1e6-c4512901e3b3)
 
 - Chargement et nettoyage des données.
 - Analyse descriptive pour identifier les tendances générales.
@@ -35,7 +36,7 @@ Le projet suit les étapes suivantes :
 ## Résultats
 ### Régression Logistique
 
-![Capture d’écran 2025-01-13 194349](https://github.com/user-attachments/assets/51484df8-04b5-45ec-b11f-bcafebbd8c4d) 
+![Capture d’écran 2025-01-13 194349](https://github.com/user-attachments/assets/2d84e3a4-d20d-4829-9033-5320f870f3cd)
 
 Le premier modèle utilisé est une régression logistique. Les résultats montrent un AUC (Area Under the Curve) de 0,90 sur l'ensemble d'entraînement et 0,90 sur l'ensemble de test, autrement dit le modèle est capable de prédire 9 fois sur 10 le bon résultat, indiquant une bonne capacité de prédiction.
 Enfin, le modèle ne présente ni overfitting ni underfitting puisque les courbes de validation et de test sont assez proches, ce qui accentue sa robustesse.
@@ -54,12 +55,11 @@ Plusieurs autres modèles ont été testés :
 - AdaBoost et SVM : Ces deux modèles offrent de bonnes performances, avec des scores équilibrés entre les ensembles d'entraînement et de test. Le SVM a été retenu comme modèle final.
 
 ### Optimisation du SVM
-
-![Capture d’écran 2025-01-13 195244](https://github.com/user-attachments/assets/07d8d7c6-5560-4cb3-9c90-5426c47abc3c)
+![Capture d’écran 2025-01-13 195244](https://github.com/user-attachments/assets/cf3f967e-5e9c-486d-b7f1-e77203e4d4c4)
 
 Un nouveau modèle avec une recherche d'hyperparamètres a été effectuée pour optimiser le modèle SVM. Le modèle présente une bonne performance et un faible risque d'overfitting ou d'underfitting. 
 
-![Capture d’écran 2025-01-13 195148](https://github.com/user-attachments/assets/b6289d39-bd10-4085-80cd-08abda447328)
+![Capture d’écran 2025-01-13 195148](https://github.com/user-attachments/assets/d81bce81-5873-4d60-8c53-7706a54a2ae8)
 
 
 Toutefois, les résultats finaux n'ont pas montré d'amélioration significative par rapport au modèle de base, puisque dans les deux cas (avec et sans optimisation), la précision générale est de 0,81 ce qui est plus faible que le score obtenu avec la régression linéaire.
