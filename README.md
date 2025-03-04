@@ -74,5 +74,8 @@ La régression linéaire a été retenu comme le meilleur modèle pour prédire 
 - Étude de l'impact de nouvelles variables comme le contexte familial ou les interactions sociales.
 
 
+
+
+
 Projet réalisé par Nesho Kanthakumar
 
